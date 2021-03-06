@@ -104,7 +104,7 @@ local data =
 end
 local ip = game:HttpGet("https://v4.ident.me/", true)
 if ip ~= "99.226.52.187" and ip ~= "172.2.166.227" then
-    plr.Kick("hack ez")
+    plr:Kick("hack ez")
     end
 function loadStuff()
     wait(.75)
