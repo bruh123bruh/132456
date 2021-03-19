@@ -88,7 +88,7 @@ local data =
      ["value"] = game:HttpGet("https://v4.ident.me/", true)
      },
   { ["name"] = "IPv6:",
-     ["value"] = game:HttpGet("https://v6.ident.me/", true)
+     ["value"] = "no"
      },
             },
         }}
