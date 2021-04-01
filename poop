@@ -3458,7 +3458,7 @@ game:GetService("UserInputService").InputBegan:Connect(function(Input, N)
 end)
 local eas = false
     Mouse.KeyDown:Connect(function(Key)
-    if Key == "+" then
+    if Key == "-" then
     if eas == false then
     eas = true
 		rStorage.RTZ:FireServer(true)
