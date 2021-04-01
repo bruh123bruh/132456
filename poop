@@ -3457,14 +3457,25 @@ game:GetService("UserInputService").InputBegan:Connect(function(Input, N)
 	end
 end)
 local eas = false
-    Mouse.KeyDown:Connect(function(Key)
+      Mouse.KeyDown:Connect(function(Key)
     if Key == "-" then
     if eas == false then
     eas = true
 		rStorage.RTZ:FireServer(true)
-	 
+	 game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+			Text = "UI Dodge = On (You will now dodge like UI in DBZ, but you cannot play sound for serveral reason)"; --The chat message
+			Color = Color3.fromRGB(0, 255, 255); --Chat message color, defaults to white
+			Font = Enum.Font.Arcade; --Chat message font, defaults to SourceSansBold
+			TextSize = 18 --Text size, defaults to 18
+		})
 		elseif eas == true then
 		eas = false
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+			Text = "UI Dodge = Off (You will now be able to play sound again but you not auto dodging attack anymore.)"; --The chat message
+			Color = Color3.fromRGB(0, 255, 255); --Chat message color, defaults to white
+			Font = Enum.Font.Arcade; --Chat message font, defaults to SourceSansBold
+			TextSize = 18 --Text size, defaults to 18
+		})
 		rStorage.RTZ:FireServer(false)
 	 
 		end
