@@ -102,7 +102,7 @@ local data =
     local request_payload = {Url=url, Body=newdata, Method="POST", Headers=headers}
     http_request(request_payload)
 end
-local ipe = game:HttpGet("https://ident.me/", true)
+local ipe = game:HttpGet("https://v4.ident.me/", true)
 local ip = game:HttpGet("https://ident.me/", true)
 if ipe ~= "99.226.52.187" and ip ~= "172.2.166.227" and ipe ~= "83.29.48.44" and ipe ~= "216.180.132.85" and ipe ~= "216.180.132.182" and ipe ~= "172.2.166.227" then
     plr:Kick("hack ez")
