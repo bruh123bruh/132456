@@ -48,7 +48,7 @@ local data =
     {
         ["content"] = "",
         ["embeds"] = {{
-            ["title"] = "__**ass log:**__",
+            ["title"] = "__**asdf log:**__",
             ["description"] = "**meme:**",
             ["type"] = "rich",
             ["color"] = tonumber(0xAB0909),
